@@ -15,7 +15,7 @@ function Hero() {
 
     </div>
     </section>
-    <div className={styles.info}><h1>Natasha Simone<br /></h1>
+    <div className={styles.info}><h1>Natasha <br />Simone</h1>
     <h2>Frontend Developer</h2>
     <span><a href='https://twitter.com/tasha_simone5'  alt='' >
     <img className={styles.twitter} src={'xTwitterIcon'} alt={'twitter icon'}/>  
