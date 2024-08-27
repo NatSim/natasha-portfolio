@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 //logos
-import heroImg from "../../assets/hero-image.jpg";
+import heroImg from "../../assets/hero-image-crop.png";
 import webSunny from "../../assets/wb_sunny.png";
 import webMoon from "../../assets/dark_mode_moon.png";
 import XIcon from "@mui/icons-material/X";
@@ -21,13 +21,13 @@ function Hero() {
         className={styles.twitter}
         href='https://twitter.com/tasha_simone5'
         alt=''
-        sx={{ ...{ filter: "invert(1)" } }}
       ></XIcon>
     ) : (
       <XIcon
         href='https://twitter.com/tasha_simone5'
         alt=''
         className={styles.twitter}
+        sx={{ ...{ filter: "invert(1)" } }}
       ></XIcon>
     );
   const githubIcon =
@@ -36,13 +36,13 @@ function Hero() {
         className={styles.github}
         href='https://github.com/NatSim'
         alt=''
-        sx={{ ...{ filter: "invert(1)" } }}
       ></GitHubIcon>
     ) : (
       <GitHubIcon
         className={styles.github}
         href='https://github.com/NatSim'
         alt=''
+        sx={{ ...{ filter: "invert(1)" } }}
       ></GitHubIcon>
     );
   const linkedinIcon =
@@ -50,12 +50,12 @@ function Hero() {
       <LinkedInIcon
         className={styles.linkedin}
         alt={"linkedin icon"}
-        sx={{ ...{ filter: "invert(1)" } }}
       ></LinkedInIcon>
     ) : (
       <LinkedInIcon
         className={styles.linkedin}
         alt={"linkedin icon"}
+        sx={{ ...{ filter: "invert(1)" } }}
       ></LinkedInIcon>
     );
   return (
