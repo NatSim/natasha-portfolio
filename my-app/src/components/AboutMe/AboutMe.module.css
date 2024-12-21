@@ -1,0 +1,16 @@
+.aboutContainer{
+    width: 100%;
+    background-color: #FDCA40;
+    font-size: 22px;
+    }
+
+    .paragraphContainer{
+        padding: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+        .paragraphContainer {
+          padding: 5.5rem; /* Padding for tablet and larger screens */
+        }
+    }
+    

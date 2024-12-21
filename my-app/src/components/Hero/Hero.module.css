@@ -1,0 +1,21 @@
+/* centre the container */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap:20px;
+    text-align: center;
+    height: 100dvh;
+    min-height: 500px;
+    /* border-bottom: inset;
+    border-bottom-color: #FDCA40; */
+  }
+    
+
+
+.clickableIcon {
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+  }
