@@ -5,7 +5,7 @@ const AboutMe = () => {
     <>
       <section className={styles.aboutContainer}>
         <div className={styles.paragraphContainer}>
-          <h2>Hello</h2>
+          <h2>About me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
