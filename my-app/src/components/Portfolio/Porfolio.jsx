@@ -28,7 +28,7 @@ const Portfolio = () => {
             <div className={styles.sitesContainer}>
               <div className={styles.logoContainer}>
                 <p>NTW responsive website-React</p>
-                <Image href={} src={""} />
+                <Image href={""} src={""} />
               </div>
               <div>
                 <p>Just so you know responsive website-React</p>
