@@ -1,23 +1,25 @@
 import styles from "./Portfolio.module.css";
-import justSoYouKnow from "../../assets/just_so_you_know.png";
+// import justSoYouKnow from '../../assets/just_so_you_know.png'
+import Image  from "../Image/Image";
 
-const SiteImage = () => (
-  <a href='https://www.gotellthebees.org/'>
-    <img
-      className={styles.ctaImage}
-      src='https://www.gotellthebees.org/static/media/GTTB_Logo.16688c23.jpg'
-      alt=''
-    ></img>
-  </a>
-);
-
-const Site2Image = () => (
-  <a href=''>
-    <img className={styles.ctaImage} src={justSoYouKnow} alt=''></img>
-  </a>
-);
 
 const Portfolio = () => {
+  const ntwImageArray = [
+    {
+      href: "https://www.gotellthebees.org/",
+      src: "https://www.gotellthebees.org/static/media/GTTB_Logo.16688c23.jpg",
+      alt: "",
+    },
+    { href: "", src: '', alt: "" },
+  ];
+
+  ntwImageArray.map((item) => {
+    console.info("item", item);
+    return item;
+  });
+
+  console.info("ntwArray", ntwImageArray);
+
   return (
     <>
       <section>
@@ -25,13 +27,13 @@ const Portfolio = () => {
           <div className={styles.headingContainer}>
             <h2>Portfolio</h2>
             <div className={styles.sitesContainer}>
-              <div>
+              <div className={styles.logoContainer}>
                 <p>NTW responsive website-React</p>
-                <SiteImage />
+                {/* <Image src={''} /> */}
               </div>
               <div>
                 <p>Just so you know responsive website-React</p>
-                <Site2Image />
+                {/* <Image /> */}
               </div>
               <div>
                 <p>Book responsive app-JS</p>
