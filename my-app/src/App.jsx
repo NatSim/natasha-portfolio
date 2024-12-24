@@ -4,6 +4,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Porfolio";
+import Blogs from "./components/Blogs/Blogs";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <AboutMe />
       <Portfolio />
+      <Blogs />
     </ThemeProvider>
   );
 };
