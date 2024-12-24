@@ -1,7 +1,6 @@
 import styles from "./Portfolio.module.css";
 // import justSoYouKnow from '../../assets/just_so_you_know.png'
-import Image  from "../Image/Image";
-
+import Image from "../Image/Image";
 
 const Portfolio = () => {
   const ntwImageArray = [
@@ -10,7 +9,7 @@ const Portfolio = () => {
       src: "https://www.gotellthebees.org/static/media/GTTB_Logo.16688c23.jpg",
       alt: "",
     },
-    { href: "", src: '', alt: "" },
+    { href: "", src: "", alt: "" },
   ];
 
   ntwImageArray.map((item) => {
@@ -29,11 +28,11 @@ const Portfolio = () => {
             <div className={styles.sitesContainer}>
               <div className={styles.logoContainer}>
                 <p>NTW responsive website-React</p>
-                {/* <Image src={''} /> */}
+                <Image href={} src={""} />
               </div>
               <div>
                 <p>Just so you know responsive website-React</p>
-                {/* <Image /> */}
+                <Image />
               </div>
               <div>
                 <p>Book responsive app-JS</p>

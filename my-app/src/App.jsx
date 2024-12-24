@@ -5,11 +5,11 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Porfolio";
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <ThemeProvider>
-      <AboutMe />
       <Hero />
+      <AboutMe />
       <Portfolio />
     </ThemeProvider>
   );
