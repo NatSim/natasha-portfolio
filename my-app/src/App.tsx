@@ -1,19 +1,18 @@
 import React from "react";
+import { ThemeProvider } from "./common/ThemeContext";
 import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Hero from "./components/Hero/Hero";
 import Portfolio from "./components/Portfolio/Porfolio";
 
-//Return all components sections here
-
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Hero />
+    <ThemeProvider>
       <AboutMe />
+      <Hero />
       <Portfolio />
-    </>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

@@ -7,11 +7,11 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "baseUrl": "./src", 
+      "baseUrl": "./src",
       "paths": {
         "*": ["node_modules/*"]
       }
     },
-    "include": ["src"]
+    "include": ["src", "./declaration.d.ts"]
   }
   

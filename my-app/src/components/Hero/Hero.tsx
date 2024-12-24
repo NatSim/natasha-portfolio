@@ -9,7 +9,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 //react
-import { useTheme } from "../../common/ThemeContext";
+import {useTheme} from "../../common/ThemeContext"
 import { grey } from "@mui/material/colors";
 
 const lightModeColor = grey[900];
