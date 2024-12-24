@@ -7,20 +7,40 @@ const Blogs = () => {
   const careerProgressionBlogSrc =
     "https://medium.com/@natsimbig/5-tips-from-a-junior-developer-for-career-progression-with-rupauls-drag-race-gifs-bd9d5ab7a8c8";
 
+  const blogs = [
+    {
+      title: "Blog Title 1",
+      image: blackCodherBlogSrc,
+      summary: "This is a brief summary of the first blog post.",
+      link: blackCodherBlogSrc,
+    },
+    {
+      title: "Blog Title 2",
+      image: "https://example.com/image2.jpg",
+      summary: "This is a brief summary of the second blog post.",
+      link: careerProgressionBlogSrc,
+    },
+    {
+      title: "Blog Title 3",
+      image: "https://example.com/image3.jpg",
+      summary: "This is a brief summary of the third blog post.",
+      link: "https://example.com/blog3",
+    },
+  ];
+
   return (
-    <section className='blog-embeds'>
-      <div
-        id='retainable-rss-embed'
-        data-rss='https://medium.com/feed/retainable,
-https://medium.com/feed/vue-mastery'
-        data-maxcols='3'
-        data-layout='grid'
-        data-poststyle='inline'
-        data-readmore='Read the rest'
-        data-buttonclass='btn btn-primary'
-        data-offset='-100'
-      ></div>
-    </section>
+    <div className='blog-grid'>
+      {blogs.map((blog, index) => (
+        <div key={index} className='blog-card'>
+          <img src={blog.image} alt={blog.title} className='blog-image' />
+          <h3>{blog.title}</h3>
+          <p>{blog.summary}</p>
+          <a href={blog.link} className='read-more'>
+            Read More
+          </a>
+        </div>
+      ))}
+    </div>
   );
 };
 
